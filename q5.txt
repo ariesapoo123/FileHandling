@@ -1,38 +1,39 @@
 import random
+with open("a.txt",'w') as f:
 
-f = open('test-2.txt', 'w')
+    l=[]
 
-lines = []
+    for i in range(10):
 
-for j in range(11):
-    lines.append(random.randint(1, 20))
+        l.append(random.randint(1, 20))
 
-f.writelines(str(lines))
+    for i in l:
 
-f.close()
+        f.write(str(i))
 
+        f.write("\n")
 
-import random
-f = open('test-3.txt', 'w')
+with open("a.txt", 'r') as f:
 
-lines = []
+    list = f.readlines()
 
-for j in range(11):
-    lines.append(random.randint(1, 20))
-    lines.sort()
-f.writelines(str(lines))
+    list.sort()
 
-f.close()
+    with open("b.txt", 'w') as f1:
 
+        for i in list:
 
-output
+            f1.write(str(i))
 
-text files will be created
+            f1.write("\n")
+with open("a.txt") as f:
 
-test-2.txt
+    d = f.read()
 
-[2, 5, 4, 17, 8, 9, 1, 1, 16, 5, 16]
+    print(d)
 
-test-3.txt
+with open("b.txt") as f:
 
-[3, 7, 10, 12, 14, 15, 18, 18, 18, 18, 20]
+    d = f.read()
+
+    print(d)
