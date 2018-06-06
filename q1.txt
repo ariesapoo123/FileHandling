@@ -1,0 +1,16 @@
+def read_last_lines(filename, lines):
+    with open(filename, "r") as test_file:
+        display = test_file.readlines()[-lines:]
+        for l in display:
+            print(l, end="")
+
+
+read_last_lines("test.txt", 3)
+
+
+output
+
+
+“Your father’s right,” she said. “Mockingbirds don’t do one thing except make music for us to enjoy. 
+They don’t eat up people’s gardens, don’t nest in corn cribs, they don’t do one thing but sing their hearts out for us. 
+That’s why it’s a sin to kill a mockingbird.” – Harper Lee, To Kill a Mockingbird

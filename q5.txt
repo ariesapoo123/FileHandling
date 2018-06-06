@@ -1,0 +1,38 @@
+import random
+
+f = open('test-2.txt', 'w')
+
+lines = []
+
+for j in range(11):
+    lines.append(random.randint(1, 20))
+
+f.writelines(str(lines))
+
+f.close()
+
+
+import random
+f = open('test-3.txt', 'w')
+
+lines = []
+
+for j in range(11):
+    lines.append(random.randint(1, 20))
+    lines.sort()
+f.writelines(str(lines))
+
+f.close()
+
+
+output
+
+text files will be created
+
+test-2.txt
+
+[2, 5, 4, 17, 8, 9, 1, 1, 16, 5, 16]
+
+test-3.txt
+
+[3, 7, 10, 12, 14, 15, 18, 18, 18, 18, 20]
