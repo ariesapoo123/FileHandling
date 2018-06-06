@@ -1,0 +1,12 @@
+from collections import Counter
+def word_count(fname):
+        with open(fname) as f:
+                return Counter(f.read().split())
+
+
+print("Number of words in the file :", word_count("test.txt"))
+
+
+output
+
+Number of words in the file : Counter({'a': 6, 'to': 5, 'don’t': 4, 'one': 3, 'you': 3, 'the': 3, 'but': 3, 'I': 3, 'sin': 3, 'do': 3, 'in': 2, 'it’s': 2, 'kill': 2, 'mockingbird.”': 2, 'was': 2, 'thing': 2, 'for': 2, '“Atticus': 1, 'said': 1, 'Jem': 1, 'day,': 1, '“I’d': 1, 'rather': 1, 'shot': 1, 'at': 1, 'tin': 1, 'cans': 1, 'backyard,': 1, 'know': 1, 'you’ll': 1, 'go': 1, 'after': 1, 'birds.': 1, 'Shoot': 1, 'all': 1, 'blue': 1, 'jays': 1, 'want,': 1, 'if': 1, 'can': 1, 'hit': 1, '‘em,': 1, 'remember': 1, 'That': 1, 'only': 1, 'time': 1, 'ever': 1, 'heard': 1, 'Atticus': 1, 'say': 1, 'it': 1, 'something,': 1, 'and': 1, 'asked': 1, 'Miss': 1, 'Maudie': 1, 'about': 1, 'it.': 1, '“Your': 1, 'father’s': 1, 'right,”': 1, 'she': 1, 'said.': 1, '“Mockingbirds': 1, 'except': 1, 'make': 1, 'music': 1, 'us': 1, 'enjoy.': 1, 'They': 1, 'eat': 1, 'up': 1, 'people’s': 1, 'gardens,': 1, 'nest': 1, 'corn': 1, 'cribs,': 1, 'they': 1, 'sing': 1, 'their': 1, 'hearts': 1, 'out': 1, 'us.': 1, 'That’s': 1, 'why': 1, '–': 1, 'Harper': 1, 'Lee,': 1, 'To': 1, 'Kill': 1, 'Mockingbird': 1})
